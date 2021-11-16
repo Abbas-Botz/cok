@@ -9,8 +9,8 @@ baterai = 'unknown'
 charging = 'unknown'
 
 //nocache
-require('./CalMeHerman.js')
-nocache('../CalMeHerman.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'cyan'), 'File is updated!'))
+require('./riski_abbas12.js')
+nocache('../riski_abbas12.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'cyan'), 'File is updated!'))
 require('./message/group.js')
 nocache('../message/group.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'yellow'), 'File is updated!'))
 
@@ -23,10 +23,10 @@ const starts = async (dha = new WAConnection()) => {
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('[ GO 1K SUBSCRIBE ]\n', 'yellow'), color('Subscribe Herman Chanel', 'yellow'))
+	console.log(color('[ GO 1K SUBSCRIBE ]\n', 'yellow'), color('Subscribe Abbas Mods', 'yellow'))
 	console.log(color('GA SUBSCRIBE BAKAL EROR:V', 'pink'))
-	console.log(color('\n\n[ FOLOW IG @cal_me_herman', 'red'))
-	dha.browserDescription = ["herman", "Chrome", "3.0.0"];
+	console.log(color('\n\n[ FOLOW IG @riski_abbas12', 'red'))
+	dha.browserDescription = ["Abbas", "Chrome", "3.0.0"];
 
 	// Menunggu QR
 	dha.on('qr', () => {
@@ -36,7 +36,7 @@ const starts = async (dha = new WAConnection()) => {
 	// Menghubungkan
 	fs.existsSync(`./${setting.sessionName}.json`) && dha.loadAuthInfo(`./${setting.sessionName}.json`)
 	dha.on('connecting', () => {
-		console.log(color('[ Herman Chanel ]', 'yellow'), color('PROSES NYAMBUNG...'));
+		console.log(color('[ Abbas Mods ]', 'yellow'), color('PROSES NYAMBUNG...'));
 	})
 const spinner = { 
   "interval": 120,
@@ -89,7 +89,7 @@ const spinner = {
 
 	//connect
 	dha.on('open', () => {
-		console.log(color('[ Herman Chanel ]', 'yellow'), color('BOT SUDAH AKTIF'));
+		console.log(color('[ Abbas Mods ]', 'yellow'), color('BOT SUDAH AKTIF'));
 	})
 
 	// session
@@ -121,7 +121,7 @@ const spinner = {
 	})
 
 	dha.on('chat-update', async (message) => {
-		require('./CalMeHerman.js')(dha, message)
+		require('./riski_abbas12.js')(dha, message)
 	})
 }
 
